@@ -4,8 +4,8 @@ current_dir = $(shell pwd)
 
 ## load dependencies for this project
 bootstrap: 
-	make brew
 	ln -sv $(current_dir)/.vscode/ ~/.vscode
+	make brew
 	make vscode
 _PHONY: bootstrap
 
