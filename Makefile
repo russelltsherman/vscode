@@ -3,7 +3,7 @@
 current_dir = $(shell pwd)
 
 ## load dependencies for this project
-bootstrap:
-	# symlink .vim directory to user home directory
+bootstrap: 
+	make brew
 	ln -sv $(current_dir)/.vscode/ ~/.vscode
 _PHONY: bootstrap
