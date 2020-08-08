@@ -1,0 +1,58 @@
+{
+  "[c]": {
+    // disable formatOnSave for c
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    // disable formatOnSave for javascript
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    // disable formatOnSave for react
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    // allow eslint to run on save
+    "source.fixAll": true
+  },
+  "editor.cursorBlinking": "phase",
+  // enable format on save for all
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "go.formatTool": "goimports",
+  "prettier.disableLanguages": [
+    // prettier for js will be run by eslint
+    "javascript",
+    "javascriptreact"
+  ],
+  "terminal.ansiBlack": "#282828",
+  "terminal.ansiBlue": "#83A598",
+  "terminal.ansiBrightBlack": "#665C54",
+  "terminal.ansiBrightBlue": "#83A598",
+  "terminal.ansiBrightCyan": "#8EC07C",
+  "terminal.ansiBrightGreen": "#B8BB26",
+  "terminal.ansiBrightMagenta": "#D3869B",
+  "terminal.ansiBrightRed": "#FB4934",
+  "terminal.ansiBrightWhite": "#FBF1C7",
+  "terminal.ansiBrightYellow": "#FABD2F",
+  "terminal.ansiCyan": "#8EC07C",
+  "terminal.ansiGreen": "#B8BB26",
+  "terminal.ansiMagenta": "#D3869B",
+  "terminal.ansiRed": "#FB4934",
+  "terminal.ansiWhite": "#D5C4A1",
+  "terminal.ansiYellow": "#FABD2F",
+  "terminal.background": "#282828",
+  "terminal.foreground": "#D5C4A1",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminalCursor.background": "#D5C4A1",
+  "terminalCursor.foreground": "#D5C4A1",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Gruvbox Dark (Medium)",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "yaml.schemas": {
+    "kubernetes": "*.yaml"
+  }
+}
