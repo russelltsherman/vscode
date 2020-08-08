@@ -38,29 +38,29 @@ echo "clone or update repo"
 echo "#######################################################################"
 if [ -d  "${GIT_SRC}/github.com/${GIT_ORG}/${GIT_PROJECT}" ]
 then
-  # dotfiles repo clone exists.. update
+  # repo clone exists.. update
   ( 
     cd "${GIT_SRC}/github.com/${GIT_ORG}/${GIT_PROJECT}" || exit; 
     git pull --rebase 
   )
 else
   mkdir -p "${GIT_SRC}/github.com/${GIT_ORG}"
-  # clone dotfiles repo
+  # clone repo
   git clone "https://github.com/${GIT_ORG}/${GIT_PROJECT}" \
-    "${HOME}/${GIT_SRC}/github.com/${GIT_ORG}/${GIT_PROJECT}"
+    "${GIT_SRC}/github.com/${GIT_ORG}/${GIT_PROJECT}"
 fi
 
 echo ""
 echo "#######################################################################"
 echo "initialize baseline build harness"
 echo "#######################################################################"
-make -C "${HOME}/dotfiles" init
+make -C "${GIT_SRC}/github.com/${GIT_ORG}/${GIT_PROJECT}" init
 
 echo ""
 echo "#######################################################################"
 echo "execute baseline bootstrap"
 echo "#######################################################################"
-make -C "${HOME}/dotfiles" bootstrap
+make -C "${GIT_SRC}/github.com/${GIT_ORG}/${GIT_PROJECT}" bootstrap
 
 echo ""
 echo "#######################################################################"
