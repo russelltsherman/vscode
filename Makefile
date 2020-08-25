@@ -3,7 +3,7 @@
 current_dir = $(shell pwd)
 
 ## load dependencies for this project
-bootstrap: 
+bootstrap: init-build-harness
 	ln -sv $(current_dir)/.vscode/ ~/.vscode
 	make brew
 	make vscode
