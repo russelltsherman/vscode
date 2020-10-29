@@ -54,5 +54,6 @@
   },
   "yaml.schemas": {
     "kubernetes": "*.yaml"
-  }
+  },
+  "aws.telemetry": false
 }
