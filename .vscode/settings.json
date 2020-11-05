@@ -55,5 +55,6 @@
   "yaml.schemas": {
     "kubernetes": "*.yaml"
   },
-  "aws.telemetry": false
+  "aws.telemetry": false,
+  "go.useLanguageServer": true
 }

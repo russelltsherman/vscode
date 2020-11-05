@@ -15,6 +15,8 @@ EditorConfig.EditorConfig
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 ginfuru.ginfuru-better-solarized-dark-theme
+golang.go
+heptio.jsonnet
 HookyQR.beautify
 huizhou.githd
 idleberg.applescript
@@ -24,7 +26,6 @@ mark-tucker.aws-cli-configure
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.cpptools
-ms-vscode.Go
 msjsdiag.debugger-for-chrome
 PKief.material-icon-theme
 redhat.vscode-yaml
@@ -34,6 +35,7 @@ tomoki1207.pdf
 tomphilbin.gruvbox-themes
 vscoss.vscode-ansible
 WakaTime.vscode-wakatime
+wholroyd.HCL
 wholroyd.jinja
 wingrunr21.vscode-ruby
 xabikos.JavaScriptSnippets
