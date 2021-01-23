@@ -10,7 +10,7 @@ set -o pipefail
 
 export GIT_ORG="russelltsherman"
 export GIT_PROJECT="vscode"
-export GIT_BRANCH="master"
+export GIT_BRANCH="main"
 export GIT_SRC="${HOME}/src"
 
 if [ "$(uname -s)" == "Darwin" ]

@@ -11,16 +11,19 @@
     // disable formatOnSave for react
     "editor.formatOnSave": false
   },
+  "aws.telemetry": false,
   "editor.codeActionsOnSave": {
     // allow eslint to run on save
     "source.fixAll": true
   },
   "editor.cursorBlinking": "phase",
+  "editor.fontLigatures": true,
   // enable format on save for all
   "editor.formatOnSave": true,
   "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
   "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
   "prettier.disableLanguages": [
     // prettier for js will be run by eslint
     "javascript",
@@ -47,7 +50,7 @@
   "terminal.integrated.shell.osx": "/bin/zsh",
   "terminalCursor.background": "#D5C4A1",
   "terminalCursor.foreground": "#D5C4A1",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.colorTheme": "Gruvbox Dark (Medium)",
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -55,6 +58,4 @@
   "yaml.schemas": {
     "kubernetes": "*.yaml"
   },
-  "aws.telemetry": false,
-  "go.useLanguageServer": true
 }
