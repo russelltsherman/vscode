@@ -4,7 +4,7 @@ current_dir = $(shell pwd)
 
 ## load dependencies for this project
 bootstrap:
-	ln -sv $(current_dir)/.vscode/ ~/.vscode
+	ln -sfv $(current_dir)/.vscode/ ~/.vscode
 	make brew
 	make vscode
 _PHONY: bootstrap
@@ -13,7 +13,7 @@ _PHONY: bootstrap
 vscode:
 	@while IFS= read -r LINE; do code --install-extension "$$LINE"; done < ./.vscode/.extensions-manifest
 	@mkdir -p ~/Library/Application\ Support/Code/User/
-	@ln -sv ~/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+	@ln -sfv ~/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 .PHONY: vscode
 
 ## write Visual Studio Code extensions to manifest file
